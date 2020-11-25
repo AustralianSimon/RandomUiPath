@@ -58,8 +58,11 @@
   <Sequence DisplayName="Example Sequence" sap:VirtualizedContainerService.HintSize="376,375" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="local_datatable" />
-      <Variable x:TypeArguments="x:Int32" Name="local_rowNum" />
-      <Variable x:TypeArguments="x:String" Name="local_result" />
+      <Variable x:TypeArguments="x:Int32" Name="local_rowNum">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" />
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
